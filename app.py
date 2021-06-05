@@ -45,4 +45,4 @@ if __name__ == "__main__":
     api.add_resource(HealthCheck)
     api.add_resource(TodoItemsList)
     api.add_resource(GetTodoItem)
-    app.run(debug=True) # Make sure debug is false on production environment
+    app.run(debug=False) # Make sure debug is false on production environment
