@@ -62,6 +62,8 @@ class ToDoCollection():
     def getTodoItems(self):
         """ To get the entire todo items list """
         snapshot = self.__getSnapshot()
+        if snapshot == None:
+            return []
         todos = []
         for key, val in snapshot.items():
             todos.append(val)
