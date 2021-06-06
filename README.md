@@ -35,9 +35,9 @@ Methods | Description | Input | Output | Access
 `__findItem(id)` | To find the item | id: 1 | `dict` or `False` | Private
 `addTodoItem(content)` | To push/add new todo items into collection | dict: `{'id':1, 'task':'Task'}` | `Boolean` | Public
 `getTodoItems()` | To get the entire todo items list | None | `list` | Public
-`getTodoItem()` | To get the todo item | id: 1 | `dict` | Public
+`getTodoItem()` | To get the todo item | id: 1 | `dict` or `None` | Public
 `clearAllItems()` | To clear all nodes in the collection | None | `Boolean` | Public
-`updateTodoItem(self, id, content)` | To update item from the collection | id: 1, dict: `{'id':1, 'task':'Task'}` | Boolean | Public
+`updateTodoItem(self, id, content)` | To update item from the collection | id: 1, dict: `{'id':1, 'task':'Task'}` | `Boolean` | Public
 `deleteTodoItem(id)` | To delete item from the collection | id: 1 | `Boolean` | Public
 
 ## [app.py](https://github.com/jeganathpv/flask-firebase-crud/blob/main/app.py)
