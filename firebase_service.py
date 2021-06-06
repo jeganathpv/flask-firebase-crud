@@ -35,14 +35,15 @@ class ToDoCollection():
             To find the item 
             """
         snapshot = self.__getSnapshot()
-        updated = False
-        itemToBeUpdate = None
+        if snapshot == None:
+            return False
+        item = None
         for key, val in snapshot.items():
             if val[self.key] == id:
-                itemToBeUpdate = key
+                item = key
                 break
-        if(itemToBeUpdate != None):
-            node = self.collection.child(itemToBeUpdate)
+        if(item != None):
+            node = self.collection.child(item)
             return node
         else:
             return False

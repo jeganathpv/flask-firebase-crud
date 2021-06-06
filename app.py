@@ -68,7 +68,7 @@ class AddToDoItem(Resource):
             return str(ex), 400
 
 class DeleteToDoItem(Resource):
-    @app.route('/deleteItem', methods=['POST'])
+    @app.route('/deleteItem', methods=['DELETE'])
     @cross_origin(support_credentials=True)
     def deleteItem():
         """
@@ -85,7 +85,7 @@ class DeleteToDoItem(Resource):
             return str(ex), 400
 
 class DeleteAllToDoItems(Resource):
-    @app.route('/deleteAllItems', methods=['GET'])
+    @app.route('/deleteAllItems', methods=['DELETE'])
     @cross_origin(support_credentials=True)
     def deleteAll():
         """
@@ -96,7 +96,7 @@ class DeleteAllToDoItems(Resource):
             return jsonify(status)
         except Exception as ex:
             return str(ex), 400
-            
+
 class UpdateToDoItem(Resource):
     @app.route('/updateItem', methods=['POST'])
     @cross_origin(support_credentials=True)
