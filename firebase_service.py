@@ -84,7 +84,7 @@ class ToDoCollection():
          """
         itemMatchedNode = self.__findItem(id)
         if(itemMatchedNode == False):
-            return False
+            raise Exception("Item doesn't exists")
         itemMatchedNode.set(content)
         return True
 
@@ -95,6 +95,6 @@ class ToDoCollection():
          """
         itemMatchedNode = self.__findItem(id)
         if(itemMatchedNode == False):
-            return False
+            raise Exception("Item doesn't exists")
         itemMatchedNode.delete()
         return True
