@@ -50,7 +50,7 @@ Main python file run as Flask Restful API application
 # APIs Used in app.py - Flask Application
 
 API URL | Description | METHOD | Body Content(Eg.) 
---- | --- | --- | ---
+--- | --- | :---: | ---
 */health* | Check whether the application is running properly or not | **GET** | `None` 
 */getAllItems* | Return all the todo items | **GET** | `None`
 */getItem* | Return the todo item  | **POST** | `{"id": 1}`
